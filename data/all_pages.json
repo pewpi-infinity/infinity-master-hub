@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "name": "infinity-crown-index",
+    "pages_url": "https://pewpi-infinity.github.io/infinity-crown-index/"
+  },
+  {
+    "name": "infinity-mega-labs",
+    "pages_url": "https://pewpi-infinity.github.io/infinity-mega-labs/"
+  },
+  {
+    "name": "mario-InfinityTrumpCoin",
+    "pages_url": "https://pewpi-infinity.github.io/mario-InfinityTrumpCoin/"
+  },
+  {
+    "name": "infinity-research-engine",
+    "pages_url": "https://pewpi-infinity.github.io/infinity-research-engine/"
+  },
+  {
+    "name": "infinity-master-hub",
+    "pages_url": "https://pewpi-infinity.github.io/infinity-master-hub/"
+  }
+]

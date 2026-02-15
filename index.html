@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍄 Infinity Master Hub</title>
+    <title>🍄 Infinity Hub</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -11,43 +11,115 @@
             color: #fff;
             font-family: 'Courier New', monospace;
             padding: 2rem;
+            min-height: 100vh;
         }
-        .container { max-width: 1600px; margin: 0 auto; }
+        .container { max-width: 1200px; margin: 0 auto; }
         h1 {
             text-align: center;
-            font-size: 3rem;
-            margin-bottom: 2rem;
-            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(255,255,255,0.5);
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
         }
         .card {
             background: rgba(255,255,255,0.1);
             border: 3px solid rgba(255,255,255,0.3);
-            border-radius: 15px;
-            padding: 1.5rem;
+            border-radius: 20px;
+            padding: 2rem;
             transition: all 0.3s;
+            cursor: pointer;
         }
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
             border-color: #fff;
+            background: rgba(255,255,255,0.15);
         }
-        .title { font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem; }
-        .url { font-size: 0.85rem; opacity: 0.8; word-break: break-all; }
+        .icon { font-size: 3rem; margin-bottom: 1rem; }
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .url {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            word-break: break-all;
+        }
         a { color: inherit; text-decoration: none; }
+        .add-more {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🍄 INFINITY MASTER HUB</h1>
-        <p style="text-align:center;font-size:1.5rem;margin-bottom:3rem;">0 Active Pages</p>
+        <h1>🍄 INFINITY HUB</h1>
+        <div class="subtitle">All Your Pages, One Place</div>
         
         <div class="grid">
 
+            <a href="https://pewpi-infinity.github.io/infinity-crown-index/" target="_blank" rel="noopener">
+                <div class="card">
+                    <div class="icon">👑</div>
+                    <div class="title">Infinity Crown Index</div>
+                    <div class="url">https://pewpi-infinity.github.io/infinity-crown-index/</div>
+                </div>
+            </a>
+
+            <a href="https://pewpi-infinity.github.io/infinity-mega-labs/" target="_blank" rel="noopener">
+                <div class="card">
+                    <div class="icon">🧪</div>
+                    <div class="title">Infinity Mega Labs</div>
+                    <div class="url">https://pewpi-infinity.github.io/infinity-mega-labs/</div>
+                </div>
+            </a>
+
+            <a href="https://pewpi-infinity.github.io/mario-InfinityTrumpCoin/" target="_blank" rel="noopener">
+                <div class="card">
+                    <div class="icon">🎮</div>
+                    <div class="title">Mario Infinitytrumpcoin</div>
+                    <div class="url">https://pewpi-infinity.github.io/mario-InfinityTrumpCoin/</div>
+                </div>
+            </a>
+
+            <a href="https://pewpi-infinity.github.io/infinity-research-engine/" target="_blank" rel="noopener">
+                <div class="card">
+                    <div class="icon">🔬</div>
+                    <div class="title">Infinity Research Engine</div>
+                    <div class="url">https://pewpi-infinity.github.io/infinity-research-engine/</div>
+                </div>
+            </a>
+
+            <a href="https://pewpi-infinity.github.io/infinity-master-hub/" target="_blank" rel="noopener">
+                <div class="card">
+                    <div class="icon">🌐</div>
+                    <div class="title">Infinity Master Hub</div>
+                    <div class="url">https://pewpi-infinity.github.io/infinity-master-hub/</div>
+                </div>
+            </a>
+
+        </div>
+        
+        <div class="add-more">
+            <h2>🚀 Want to add more pages?</h2>
+            <p>Just add them to data/all_pages.json and rebuild!</p>
+            <p style="margin-top:1rem;">Currently showing: <strong>5 pages</strong></p>
         </div>
     </div>
 </body>
